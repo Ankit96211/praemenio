@@ -1,0 +1,154 @@
+html,body{
+	height: 100%;
+	background-color: #eeeeee;
+}
+.nav-tabs {
+        display: inline-flex;
+        width: 100%;
+        border-bottom: 2px solid #DDD;
+        }
+ .nav-tabs li a{
+ 	text-decoration: none;
+ 	color: black;
+ }
+ .nav-tabs li {
+ 	 	padding-bottom: 10px;
+text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+   box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.nav-tabs li:before {
+ content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0px;
+  height: 4px;
+  background-color:  #0275d8;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-tabs li:hover:before, .nav-tabs li:focus:before, .nav-tabs li.active:before {
+  left: 0;
+  right: 0;
+
+}
+ .nav-tabs li.active{
+ 	font-weight: bold;
+ }
+
+ .v-center
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.h-center
+{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.plist-item{
+	min-width: 15%;
+ 	border:1px solid #ddd;
+ }
+ .pimg{
+ 	width: 100%;
+ }
+.pno img{ 
+width: 100%;
+position: relative;
+}
+      .pimg img{
+        border:2px solid black;
+                	width: 500px;
+position: relative;
+      }
+      .ptext h5{
+      	font-weight: bold;
+        font-size: 16px;
+      }
+            .ptext p{
+        font-size: 14px;
+      }
+
+      .pimg{
+      	position: relative;
+      }
+      .pimg::after {
+  content: "3";
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  top: 70%;
+  left: 70%;
+  transform: translateX(-30%);
+    transform: translateY(-30%);
+}
+@media(max-width: 575px) {
+
+.pno img{
+        max-width: 60px;
+        height: 100%;
+      }
+      .pimg {
+        max-width: 60px;
+height: 100%;
+margin: auto;
+      }
+      .pimg::after {
+  content: "3";
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  top: 70%;
+  left: 70%;
+  transform: translateX(-30%);
+    transform: translateY(-30%);
+}
+.ptext{
+	width: 40%;
+
+}
+      .ptext h5{
+      	font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+            .ptext p{
+        font-size: 12px;
+      }
+
+}
+.plist-item-blue .pimg img{
+	border-color: #0275d8;
+}
+.plist-item-blue .pimg::after{
+	border-color: #0275d8;
+	background-color:#0275d8; 
+}
